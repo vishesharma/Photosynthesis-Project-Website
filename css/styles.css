@@ -1,0 +1,201 @@
+body {
+	font-family: "Helvetica", sans-serif;
+    text-align: center;
+    padding-left: 5px;
+	padding-right: 5px;
+	min-width: 900px;
+	height: 1000px;
+	overflow-y: scroll;
+	overflow-x: auto;
+	position: relative;
+}
+
+#recordBody{
+    background: url("../images/leaf-background.jpg") no-repeat center center fixed;
+	background-size: cover; 
+}
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+.background-image {
+  background: url("../images/leaf-background.jpg") no-repeat center center fixed;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  opacity: 0;
+  
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 0.75s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 0s;
+}
+
+.background-image.visible {
+  opacity: 1;
+}
+
+#title{
+	font-size: 35px;
+	color: white;
+	font-family: "Verdana", sans-serif;
+	text-align: center;
+	white-space: nowrap;
+}
+#main {
+	background-color: grey;
+    width: 1100px;
+	height: 970px;
+	margin: auto;
+    text-align: left;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+#main h1 {
+    font-size: 35px;
+	color: white;
+	font-family: "Verdana", sans-serif;
+	text-align: center;
+	white-space: nowrap;
+} 
+
+#navigation{
+	padding-left: 0px;
+}
+
+#navigation ul{
+	list-style: none;
+	text-align: center;
+}
+
+#navigation li{
+	display: inline-block;	
+}
+
+#navigation a{
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	width: 150px;
+	background-color: white;
+	font-weight: bold;
+	text-align: center;
+	border: 2px solid grey;
+}
+
+#navigation a:hover{
+	background-color: #33FF66; 
+}
+
+#record{
+	width: 270px;
+	height: 810px;
+	background-color: #333300;
+	margin: 0px 0px;
+	white-space: nowrap;
+	padding-left: 5px;
+	margin-left: 5px;
+	float: left;
+}
+
+#record ul{
+	list-style: none;
+	padding: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#record a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	width: 252px;
+	background-color: white;
+	font-weight: bold;
+	text-align: center;
+	border: 2px solid grey;
+	margin-top: 3px;
+	margin-bottom: 15px;
+	
+}
+
+#arduino_ID
+{
+	list-style: none;
+	padding: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 250px
+}
+
+p{
+	font-family: Verdana, sans-serif;
+	font-size: 16px;
+	text-align: left;
+	color: white;
+	margin-left: 5px;
+	margin-bottom:5px;
+	margin-top: 5px;
+}
+
+
+#record a:hover{
+	background-color: #33FF66; 
+}
+
+#content{
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 15px;
+	padding-right: 0px;
+    width: 795px;
+	height: 810px;
+	background-color: #333300;
+	float: left;
+}
+
+#recordedData {
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+    width: 300px;
+	height: 500px;
+	background-color: grey;
+}
+
+#recordBar a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	width: 130px;
+	background-color: white;
+	font-weight: bold;
+	text-align: center;
+	border: 2px solid grey;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	margin-left: 6px;
+}
+
+#recordBar a:hover{
+	background-color: #33FF66;
+}
