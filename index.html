@@ -1,0 +1,70 @@
+<!doctype html>
+<head>
+  <title>The Photosynthesis Project</title>
+  
+  <meta charset="utf-8">
+  <meta name="description" content="The Photosynthesis Project Data Record Page">
+  <meta name="viewport" content="width=device-width">
+  
+  <!--CSS style sheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Graph libraries -->
+  <script type="text/javascript" src="js/canvasjs.min.js"></script>
+  
+  <!-- Parse libraries -->
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.0.min.js"></script>
+  <script type="text/javascript">Parse.initialize("oZ2ClCNsL1wqNFIbSxbVFwqVgiK1Zso7yujCtYgQ", "uIuW4ncQCfFbOI3rBMdfcUcVOXL07sW1mkNNydMI");</script>
+  
+  <!-- Google Maps libraries -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOOBV1zUo7319eGYM1AlTZ4BcKRHhw8dU"></script>
+  
+  <!-- Utility libraries -->
+  <script type="text/javascript" src="js/dataRecord.js"></script>
+  
+</head>
+
+<body id="recordBody"> 
+    <div id="main">
+    <h1><a id="title" href="index.html" style="text-decoration:none">The Photosynthesis Project</a></h1>
+	
+	<div id="navigation">
+		<ul>
+			<li><a href="http://www.ucla.edu/">UCLA</a></li>
+			<li><a href="http://www.atmos.ucla.edu/">AOS</a></li>
+		</ul>
+	</div>
+	
+	<hr></hr>
+	
+	<div id="record">
+		<p>Select your device:</p>
+		<input id="arduino_ID" type="number" placeholder="Enter Arduino ID (1-10)" min="1"></input>
+		
+		<ul>
+			<li><a href="#" onclick="createDataWindow()" style="margin-bottom: 80px">Search</a></li>
+			<li><h2 style="color: white;">Arduino Information</h2></li>
+			<li>
+				<div style="float:left; width:128px; color: white; font-size: 3">Latitude</div>
+				<div style="width: 120px; color: white; font-size: 3">Longitude</div>
+			</li>
+			<li>
+				<input id="latitude" type="number" style="width: 121px" disabled></input>
+				<input id="longitude" type="number" style="width: 121px; margin-bottom: 15px" disabled></input>
+			</li>
+			<li style="color: white; font-size: 3">Tree Type</li>
+			<li><input id="tree" type="text" value="" style="width: 250px; margin-bottom: 15px" disabled></input></li>
+			<li style="color: white; font-size: 3">Notes</li>
+			<li><textarea id="notes" rows="8" style="width:247px; margin-bottom: 15px" disabled></textarea></li>
+			<li><a id="save" href="#" onclick="saveData()" disabled>Save</a></li>
+		</ul>
+	</div>
+	
+	<div id="content">
+		<p>Welcome! To begin, search for an Arduino and style the graph using the menu on the left.</p>
+		
+	</div>
+</body>
+
+</html>
